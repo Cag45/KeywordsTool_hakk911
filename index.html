@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Code</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <input type="password" id="code" placeholder="Enter Code">
+    <button onclick="checkCode()">Enter</button>
+    <p id="error"></p>
+  </div>
+  <script>
+    function checkCode() {
+      const input = document.getElementById('code').value.trim();
+      if (input === 'hakk911- tele-75gsu_hsyffG75gU') {
+        window.location.href = 'tool.html';
+      } else {
+        document.getElementById('error').innerText = 'Wrong code';
+      }
+    }
+  </script>
+</body>
+</html>
